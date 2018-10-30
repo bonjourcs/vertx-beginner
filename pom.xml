@@ -6,11 +6,32 @@
 
     <groupId>java.bonjourcs.com</groupId>
     <artifactId>vertx-beginner</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
 
 
+    <!-- project properties -->
+    <properties>
+        <vertx.version>3.5.4</vertx.version>
+    </properties>
+
     <modules>
         <module>vertx-beginner-core</module>
+        <module>vertx-web</module>
     </modules>
+
+    <!-- project maven dependencies -->
+    <dependencies>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-core</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.vertx</groupId>
+            <artifactId>vertx-web</artifactId>
+            <version>${vertx.version}</version>
+        </dependency>
+    </dependencies>
 
 </project>

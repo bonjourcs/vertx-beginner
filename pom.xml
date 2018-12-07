@@ -16,7 +16,7 @@
     </properties>
 
     <modules>
-        <module>vertx-beginner-core</module>
+        <module>vertx-core</module>
         <module>vertx-web</module>
     </modules>
 
